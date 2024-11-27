@@ -108,6 +108,7 @@ document.getElementById("verify").addEventListener("click", async () => {
     }
 });
 
+/// Helper functions ///
 
 // Base64 to ArrayBuffer helper
 function base64ToArrayBuffer(base64) {
@@ -118,18 +119,6 @@ function base64ToArrayBuffer(base64) {
         bytes[i] = binaryString.charCodeAt(i);
     }
     return bytes.buffer;
-}
-
-function convertArr(arrayBuffer) {
-    // Convert the ArrayBuffer to a binary string
-    let binary = "";
-    const bytes = new Uint8Array(arrayBuffer);
-    for (let i = 0; i < bytes.length; i++) {
-        binary += String.fromCharCode(bytes[i]);
-    }
-
-    // Encode the binary string to Base64
-    return btoa(binary);
 }
 
 // ArrayBuffer to Base64 helper
