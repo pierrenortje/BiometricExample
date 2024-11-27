@@ -1,0 +1,25 @@
+﻿@page
+@using BiometricExample.Models;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@if (SignInManager.IsSignedIn(User))
+{
+    <div>
+        <button id="register" class="btn btn-primary">1. Register fingerprint</button>
+
+        <button id="verify" class="btn btn-secondary">2. Verify fingerprint</button>
+    </div>
+}
+else
+{
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+}
