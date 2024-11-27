@@ -89,8 +89,6 @@ document.getElementById("verify").addEventListener("click", async () => {
             },
         };
 
-        console.log(data.response.clientDataJSON);
-
         const verifyResponse = await fetch(
             "https://localhost:7296/verify",
             {
