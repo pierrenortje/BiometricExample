@@ -24,3 +24,9 @@ Testing biometric authentication:
 3. Click on the "1. Register fingerprint" button and follow the prompts
 4. Click on the "2. Verify fingerprint" button and follow the prompts
 5. You should see a pop up saying "Verification successful!" indicating you have been verified.
+
+I have written an article on Medium.com that takes you through the code here:
+
+https://medium.com/@pierrehenrinortje1/passwordless-authentication-using-net-core-and-webauthn-c9cfd8648987
+
+Happy coding!
