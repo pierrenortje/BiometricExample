@@ -1,6 +1,7 @@
 Prerequisite:
 
 1. You have registered your fingerprint on the device that is running the solution (e.g. via Windows Hello).
+2. If you are not running on a device that supports Windows Hello/Touch ID you can register a virtual autenticator in Chrome.
 
 
 Start the solution:
